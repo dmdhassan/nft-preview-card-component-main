@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,400;1,300&family=Outfit:wght@300;400&family=Sacramento&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+body {
+     background: hsl(217, 54%, 11%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 95vh;
+     font-family: 'Outfit', sans-serif;
+}
+
+.white-txt {
+     color: hsl(0, 0%, 100%);
+}
+
+.eth {
+     color: hsl(178, 100%, 50%);
+}
+
+.soft-blue {
+     color: hsl(215, 51%, 70%);
+}
+
+.hover-text:hover {
+     cursor: pointer;
+     color: hsl(178, 100%, 50%);
+}
+
+.avatar {
+     border: 2px solid hsl(0, 0%, 100%);
+     border-radius: 100%;
+     max-width: 50px;
+     margin-right: 2rem;
+}
+
+.container {
+     background: hsl(216, 50%, 16%);
+     width: 75%;
+     max-width: 350px;
+     margin: auto;
+     border-radius: 20px;
+     padding: 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
+}
+
+.img-container {
+     text-align: center;
+     position: relative;
+     cursor: pointer;
+}
+
+.equilibrium-img {
+     width: 100%;
+     
+     border-radius: 10px;
+
+}
+
+.overlay {
+     width: 100%;
+     height: 99%;
+     border-radius: 10px;
+     position: absolute;
+     top: 0;
+     opacity: 0;
+     background: hsl(178, 100%, 50%);
+     transition: all 0.5s ease-in;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.img-container:hover .overlay {
+     opacity: .3;
+     transition: all 0.5s ease-in-out;
+}
+
+.balance {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.user {
+     display: flex;
+     align-items: center;
+     padding-top: 4%;
+     border-top: 1px solid hsl(215, 51%, 70%);
+}
